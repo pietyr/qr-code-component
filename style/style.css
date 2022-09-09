@@ -1,7 +1,4 @@
 :root {
-	--mobile-width: 375px;
-	--desktop-width: 1400px;
-
 	--white: hsl(0, 0%, 100%);
 	--light-gray: hsl(212, 45%, 89%);
 	--grayish-blue: hsl(220, 15%, 55%);
@@ -21,7 +18,7 @@ html {
 body {
 	background-color: var(--light-gray);
 	font-family: "Outfit", sans-serif;
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -40,37 +37,40 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 15px;
+	padding: 1rem;
 	background-color: var(--white);
-	border-radius: 3%;
-	max-width: 350px;
+	border-radius: 4%;
 }
 
 main img {
-	max-width: 320px;
+	max-width: 18.125rem;
 	border-radius: 3%;
 }
 
 main h1,
 main p {
 	text-align: center;
-	margin: 10px 0;
+	max-width: 18.125rem;
+	padding: 0 1rem;
+	margin: 0;
 }
 
 main h1 {
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 1.4rem;
+	margin: 1rem 0 0;
 }
 
 main p {
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-weight: 400;
 	color: var(--grayish-blue);
+	margin: 1rem 0;
 }
 
 footer {
 	flex-grow: 0;
 	text-align: center;
-	margin-bottom: 5px;
-	font-size: 12px;
+	margin-bottom: 0.25rem;
+	font-size: 0.75rem;
 }
